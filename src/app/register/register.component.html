@@ -1,0 +1,14 @@
+<form (submit)="add()">
+<h1>Signup</h1>
+<mat-form-field>
+    <p>Kindly Enter "Tea" + your name if you're a teacher or "Stud"+ you name if your a student</p>
+    <input type="text"  placeholder="Enter a username"
+    [(ngModel)]="users.Username" name="use">
+      </mat-form-field><br><br>
+<mat-form-field>
+    <input type="text"placeholder="Enter a password" 
+    [(ngModel)]="users.Password" name="pass"></mat-form-field><br><br>
+<mat-form-field>
+<button mat-stroked-button class="btn-block">Signup</button>
+</mat-form-field>
+</form>

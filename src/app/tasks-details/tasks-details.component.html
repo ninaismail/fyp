@@ -1,0 +1,10 @@
+<h1>Homework Details</h1>
+<div *ngIf="status=='Tea'">
+  <input type="text" class="form-control" placeholder="What needs to be done" (keyup.enter)="add()"
+         [(ngModel)]="tasks.Description" name="description">
+</div>
+<mat-selection-list>
+  <mat-list-option *ngIf="task">
+    {{ task.Description }}
+  </mat-list-option>
+</mat-selection-list>

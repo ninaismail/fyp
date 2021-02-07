@@ -1,0 +1,13 @@
+<form   (submit)="loginUser($event)">
+  <h1>Login</h1>
+  <mat-form-field>
+     <input type="text" matInput placeholder = "Enter your username" id="username">
+    </mat-form-field><br><br>
+  <mat-form-field>
+    <input type="text" matInput placeholder = "Enter your password" id="password">
+  </mat-form-field><br><br>
+  <mat-form-field>
+  <button mat-stroked-button class="btn-block">Login</button>
+  <a routerLink="/register">Signup</a>
+</mat-form-field>
+</form>

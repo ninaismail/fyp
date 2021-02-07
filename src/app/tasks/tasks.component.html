@@ -1,0 +1,11 @@
+      <h1>Homework</h1>
+      <!-- <input type="text" class="form-control" placeholder="What needs to be done" (keyup.enter)="add()"
+         [(ngModel)]="tasks.Title" name="title"> -->
+     
+     <mat-card class="completed" *ngFor="let task of tasks">
+            <mat-card class="view" *ngIf="task.Grade==classGrade">
+            <label> {{ task.Title }} </label>
+             <button mat-button class="Open" [routerLink]="['/task', task._id]">Open</button>
+          </mat-card>
+   </mat-card>
+    
